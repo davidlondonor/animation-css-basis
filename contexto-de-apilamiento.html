@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            display: grid;
+            place-items: center;   
+
+        }
+        .phone {
+            position: relative;
+            height: 600px;
+            width: 300px;
+            background: #ccefff;
+            border: 8px solid black;
+            box-shadow: 0 12px 8px rgba(0, 0, 0, 0.20), 20 12px 0px rgba(0, 0, 0, 0.20);
+            margin-top: 4rem;
+       
+            border-radius: 20px;
+        }
+        .layer-1 {
+            position: absolute;
+            z-index: 1;
+            height: 450px;
+            width: 80px;
+            background-color: burlywood;
+            bottom: 0;
+            right: 60px;
+        }
+        .layer-2 {
+            position: absolute;
+            z-index: 2;
+            height: 450px;
+            width: 80px;
+            background-color: burlywood;
+            bottom: 0;
+            left: 60px;
+        }
+        .layer-3 {
+            position: absolute;
+            z-index: 3;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            width: 220px;
+            height: 400px;
+            background-color: chartreuse;
+            bottom: 0;
+        }
+        .layer-4 {
+            position: absolute;
+            z-index: 4;
+            height: 350px;
+            width: 80px;
+            bottom: 0;
+            left: 10px;
+            background-color: burlywood;
+        }
+        .layer-5 {
+            position: absolute;
+            z-index: 5;
+            left: 10px;
+            width: 220px;
+            height: 300px;
+            background-color:royalblue;
+            bottom: 0;
+        }
+        .layer-6 {
+            position: absolute;
+            z-index: 6;
+            height: 220px;
+            width: 80px;
+            bottom: 0;
+            right: 30px;
+            background-color: burlywood;
+        }
+        .layer-7 {
+            position: absolute;
+            z-index: 7;
+            right: 10px;
+            width: 220px;
+            height: 170px;
+            background-color: chocolate;
+            bottom: 0;
+        }
+        .layer-8 {
+            position: absolute;
+            z-index: 8;
+            left: 18px;
+            width: 80px;
+            height: 150px;
+            background-color: seashell;
+            bottom: 0;
+        }
+        .layer-9 {
+            position: absolute;
+            z-index: 9;
+            left: 10px;
+            width: 220px;
+            height: 100px;
+            background-color: cadetblue;
+            bottom: 0;
+        }
+        .layer-10 {
+            position: absolute;
+            z-index: 10;
+        }
+        .left-ear--outer{
+          background-color: crimson;
+          border-radius: 90%;
+          width: 20px;
+          height: 50px;
+          position: absolute;
+          left: 10px;
+        }
+        .left-ear--inner{
+          background-color: pink;
+          border-radius: 90%;
+          width: 10px;
+          height: 50px;
+          position: absolute;
+          left: 15px;
+          top: 8px;
+        }
+        .right-ear--outer{
+          background-color: crimson;
+          border-radius: 90%;
+          width: 20px;
+          height: 50px;
+          position: absolute;
+          left: 50px;
+        }
+        .right-ear--inner{
+          background-color: pink;
+          border-radius: 90%;
+          width: 10px;
+          height: 50px;
+          position: absolute;
+          left: 55px;
+          top: 8px;
+        }
+        .head{
+            height: 80px;
+            width: 100%;
+            border-radius: 50%;
+            background: crimson;
+            left: 0;
+            right: 0;
+            top: 30px;
+            margin: 0 auto;
+            position: absolute;
+        }
+
+        .head__eye{
+            background-color: black;
+            border-radius: 50%;
+            width: 5px;
+            height: 50px;
+            position: absolute;
+            top: 15px;
+        }
+        .head__eye--left{
+          left: 30px;
+        }
+        .head__eye--right{
+  left: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="phone">
+        <div class="layer-1">
+            <div class="left-ear--outer"></div>
+            <div class='left-ear--inner'></div>
+            <div class="right-ear--outer"></div>
+            <div class='right-ear--inner'></div>
+            <div class="head">
+              <div class="head__eye head__eye--left"></div>
+              <div class="head__eye head__eye--right"></div>
+            </div>
+        </div>
+        <div class="layer-2"></div>
+        <div class="layer-3"></div>
+        <div class="layer-4"></div>
+        <div class="layer-5"></div>
+        <div class="layer-6"></div>
+        <div class="layer-7"></div>
+        <div class="layer-8"></div>
+        <div class="layer-9"></div>
+        <div class="layer-10"></div>
+    </div>
+</body>
+</html>

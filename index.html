@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba</title>
+    <style>
+        body {
+          counter-reset: game;
+        }
+        input:checked {
+          counter-increment: game;
+        }
+        .total-count::after {
+          content: counter(game);
+        }
+    
+      </style>
+</head>
+<body>
+       <ul>
+        <li><input type="checkbox"><div class="layer-1">
+          <div class="left-ear--outer"></div>
+          <div class='left-ear--inner'></div>
+          <div class="right-ear--outer"></div>
+          <div class='right-ear--inner'></div>
+          <div class="head">
+            <div class="head__eye head__eye--left"></div>
+            <div class="head__eye head__eye--right"></div>
+          </div>
+        </div></li>
+        <li><input type="checkbox"><div class="layer-2"></div></li>
+        <li><input type="checkbox"><div class="layer-3"></div></li>
+        <li><input type="checkbox"><div class="layer-4"></div></li>
+        <li><input type="checkbox"><div class="layer-5"></div></li>
+        <li><input type="checkbox"><div class="layer-6"></div></li>
+        <li><input type="checkbox"><div class="layer-7"></div></li>
+        <li><input type="checkbox"><div class="layer-8"></div></li>
+      </ul>
+    <h3 class="total-count">Score:&#9</h3>
+</body>
+</html>
